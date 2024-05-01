@@ -1,0 +1,218 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B9EAE5"
+    android:orientation="vertical">
+
+    <!-- Main content layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="#A19D9D"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="25dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:text="John Cooper"
+                        android:id="@+id/name"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:id="@+id/time"
+
+                        android:text="--:--"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="95dp"
+                        android:layout_height="95dp"
+
+                        android:layout_margin="1dp"
+                        android:background="#076E64"
+                        android:padding="5dp"
+                        android:id="@+id/profilepic"
+
+                        android:src="@drawable/profilepic"
+                        app:shapeAppearanceOverlay="@style/circleImageView"
+                        app:strokeColor="#076E64"
+                        app:strokeWidth="0dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- Footer layout -->
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="8dp"
+                android:background="@drawable/imagebox" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="70dp"
+
+                android:padding="5dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+
+                    android:layout_margin="1dp"
+                    android:background="#076E64"
+                    android:padding="2dp"
+
+                    android:src="@drawable/mute"
+                    app:shapeAppearanceOverlay="@style/circleImageView"
+                    app:strokeColor="#076E64"
+                    app:strokeWidth="5dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="70dp"
+
+                android:padding="5dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+
+                    android:layout_margin="1dp"
+                    android:background="#076E64"
+                    android:padding="5dp"
+
+                    android:src="@drawable/volume"
+                    app:shapeAppearanceOverlay="@style/circleImageView"
+                    app:strokeColor="#076E64"
+                    app:strokeWidth="5dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+
+
+                android:padding="5dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+
+                    android:layout_margin="1dp"
+                    android:background="#076E64"
+                    android:padding="1dp"
+
+                    android:src="@drawable/player"
+                    app:shapeAppearanceOverlay="@style/circleImageView"
+                    app:strokeColor="#076E64"
+                    app:strokeWidth="5dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+
+            android:padding="5dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+
+                android:layout_margin="1dp"
+                android:background="#AC0509"
+                android:padding="5dp"
+
+                android:src="@drawable/baseline_clear_24"
+                app:shapeAppearanceOverlay="@style/circleImageView"
+                app:strokeColor="#AC0509"
+                app:strokeWidth="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

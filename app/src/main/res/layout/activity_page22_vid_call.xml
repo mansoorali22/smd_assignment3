@@ -1,0 +1,219 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B9EAE5"
+    android:orientation="vertical">
+
+    <!-- Main content layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="#A19D9D"
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/remortuser"
+                    >
+
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="50:08"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:padding="5dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|bottom"
+                    android:padding="15dp">
+                <FrameLayout
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:id="@+id/sendervid"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/imagebox"
+                    android:orientation="vertical"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:gravity="right"
+                    >
+                </FrameLayout>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- Footer layout -->
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+
+        >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="5dp"
+    >
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="8dp"
+        android:background="@drawable/imagebox"
+        />
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+
+                android:padding="10dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+
+                    android:layout_margin="1dp"
+                    android:padding="2dp"
+                    android:src="@drawable/mute"
+
+                    app:shapeAppearanceOverlay="@style/circleImageView"
+                    app:strokeColor="#076E64"
+                    android:background="#076E64"
+                    app:strokeWidth="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+
+                android:padding="10dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+
+                    android:layout_margin="1dp"
+                    android:padding="5dp"
+                    android:src="@drawable/no_video"
+                    android:background="#076E64"
+                    app:shapeAppearanceOverlay="@style/circleImageView"
+                    app:strokeColor="#076E64"
+                    app:strokeWidth="5dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+
+                android:padding="10dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+
+                    android:layout_margin="1dp"
+                    android:padding="5dp"
+                    android:src="@drawable/refresh"
+
+                    app:shapeAppearanceOverlay="@style/circleImageView"
+                    app:strokeColor="#076E64"
+                    android:background="#076E64"
+                    app:strokeWidth="5dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+android:id="@+id/cross"
+                android:padding="10dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/leave"
+                    android:layout_margin="1dp"
+                    android:padding="5dp"
+                    android:src="@drawable/baseline_clear_24"
+
+                    app:shapeAppearanceOverlay="@style/circleImageView"
+                    app:strokeColor="#AC0509"
+                    android:background="#AC0509"
+                    app:strokeWidth="5dp" />
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

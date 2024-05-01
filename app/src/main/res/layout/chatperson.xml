@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:id="@+id/chat_person">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:id="@+id/profilepic"
+        app:strokeWidth="1dp"
+        app:strokeColor="#86D1CA"
+        app:shapeAppearanceOverlay="@style/circleImageView"
+        android:src="@drawable/profilepic"
+        android:layout_margin="1dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/new_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="1dp"
+            android:textColor="#8A8686"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+</LinearLayout>

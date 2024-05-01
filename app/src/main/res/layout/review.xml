@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="105dp"
+        android:padding="15dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/home_option2"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+
+            android:text="John Cooper"
+            android:textColor="#CFD6D5"
+            android:textSize="18dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/star"
+                android:id="@+id/s1"
+
+
+                />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/star"
+                android:id="@+id/s2"
+                android:layout_marginStart="2sp"
+                />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/star"
+                android:id="@+id/s3"
+                android:layout_marginStart="2sp"
+                />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/star"
+                android:id="@+id/s4"
+                android:layout_marginStart="2sp"
+                />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/empty_star"
+                android:id="@+id/s5"
+                android:layout_marginStart="2sp"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="John provided excellent \n
+Prototyping Techniques \n
+and insights. I highly"
+            android:textColor="#3D5A57"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:id="@+id/reviewGiven"
+            />
+    </LinearLayout>
+
+</LinearLayout>
